@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+    margin-top: 100px;
+}
+.hello {
+    color: white;
+    font-size: 46px;
+    display: flex;
+    margin-top: 20px;
+}
+.three {
+    top: -70px;
+    right: 0;
+    position: absolute;
+    font-size: 40px;
+    border: 1px solid red;
+    border-radius: 180px;
+    padding: 0px 10px;
+    background-color: red;
+    transition: 1s;
+    z-index: 0;
+    color: white;
+}
+.row:hover {
+    background-color: red;
+}
+.row:hover .three {
+    transform: translate(-200px, 50px);
+    z-index: -2;
+    color: red;
+}
